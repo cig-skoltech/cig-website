@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CIG Lab - Research</title>
+  <meta name="description" content="CIG Lab -- Research">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/research/">
+<link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico">
+
+
+
+</head>
+
+
+  <body>
+
+    <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	
+    <a class="navbar-brand" href="/">CIG Lab @ Skoltech</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/team">Team</a></li>
+    <li><a href="/research">Research</a></li>
+    <li><a href="/publications">Publications</a></li>
+		<li><a href="/vacancies">Vacancies</a></li>
+    <li><a href="https://github.com/cig-skoltech"><i class="fa fa-github" style="font-size:24px"></i></a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="textid" class="col-sm-12">
+  <h1 id="research">Research</h1>
+
+<h2 id="master-diploma--term-student-projects">Master Diploma / Term student projects</h2>
+
+<h3 id="project-title-sparse-image-reconstruction-with-trainable-image-priors">Project Title: Sparse Image Reconstruction with Trainable Image priors</h3>
+
+<h4 id="projectdescription">Project	Description:</h4>
+<p>Sparse image reconstruction refers to the problem of recovering an image from a limited number of measurements. Since this is a highly ill-posed problem, a meaningful reconstruction is only possible if prior information about certain image properties is taken into account. An example of an important real-world problem where sparse image reconstruction methods are typically applied is MRI reconstruction. In this case in order to reduce the scanning time and to avoid image artifacts that can appear because of the movement of the patient, usually only a limited number of k-space data are sampled. Then a sparse image reconstruction technique needs to further process the sampled data in order to recover the missing information.</p>
+
+<p>Current methods that are employed for dealing with this task mainly rely on handcrafted image priors and iterative convex optimization techniques. However, due to their iterative nature, these recovery methods are computationally demanding. The goal of this project is to investigate if an alternative method, which will be based on convolutional neural networks (CNNs) and supervised deep learning, can be used to speed-up the reconstruction time and lead to further improvements in terms of image quality.</p>
+
+<p>For more details, click at <a href="https://faculty.skoltech.ru/app/data/uploads/sites/19/2018/04/Student_Projects_2018.pdf">here</a>.</p>
+
+<h3 id="project-title-image-inpainting-with-learnable-deep-non-local-image-priors">Project Title: Image Inpainting with Learnable Deep Non-Local Image Priors</h3>
+
+<h4 id="projectdescription-1">Project	Description:</h4>
+<p>Image inpainting refers to the problem of filling in missing regions in an image in a plausible way. This is a very important problem in image processing and computer vision and can be found useful in numerous practical applications such as degraded film restoration, movie postproduction, photograph restoration and retouching, and damaged paintings restoration.</p>
+
+<p>The main goal of this project is the design and supervised training of a deep learning network for image inpainting, and the comparison of its performance with current state-of-the-art image inpainting algorithms. In this context, the core idea that will be pursued is the design of a non-local hierarchical image model, which will be able to explore the very important non-local self-similarity property of natural images (natural images usually consist of patterns that tend to repeat in different locations in the image domain), and investigate if its use can lead to further improvements in terms of reconstruction quality compared to other non-machine learning methods that have been employed so far.</p>
+
+<p>For more details, click at <a href="https://faculty.skoltech.ru/app/data/uploads/sites/19/2018/04/Student_Projects_2018.pdf">here</a>.</p>
+
+<h3 id="project-title-image-super-resolution-with-convolutional-neural-networks">Project Title: Image Super-resolution with Convolutional Neural Networks</h3>
+
+<h4 id="projectdescription-2">Project	Description:</h4>
+<p>Super-resolution (SR) refers to the problem of constructing high-resolution (HR) images from a single or several observed low-resolution (LR) images, thereby increasing the high frequency components and removing the degradations caused by the imaging process of the low resolution camera. The basic idea behind SR is to exploit prior knowledge of image properties and/or combine the non-redundant information contained in multiple low-resolution frames to generate a high-resolution image.</p>
+
+<p>The goal of this project is to investigate whether by using a deep convolutional neural network architecture and supervised learning, it is possible to develop a fast and efficient super-resolution method that will be able to produce super-resolved images of superior quality compared to the ones obtained by current image regularization techniques.</p>
+
+<p>For more details, click at <a href="https://faculty.skoltech.ru/app/data/uploads/sites/19/2018/04/Student_Projects_2018.pdf">here</a>.</p>
+
+<h3 id="project-title-trainable-filters-and-shrinkage-functions-for-motion-image-deblurring">Project Title: Trainable Filters and Shrinkage Functions for Motion Image Deblurring</h3>
+
+<h4 id="projectdescription-3">Project	Description:</h4>
+<p>When a photograph is taken under low-light conditions or the scene involves a fast moving object then motion blur appears in the captured image and significantly degrades the image quality. The motion blur is caused by the movement of the object relative to the sensor of the camera during the time that the shutter is open. Both the movement of the object and the camera shake contribute to this blurring effect. This problem is particularly apparent in low-light conditions when the exposure time is longer and can often be in the order of several seconds.</p>
+
+<p>The focus of this project will be on the design of a motion deblurring algorithm that will be able to restore the underlying image from the blurred observation. To deal with this problem conventional algorithms employ hand-crafted regularizers to explore prior information about the image properties. In this project, the goal is to learn instead a suitable regularizer directly from training data. This is possible by designing a suitable neural network and learning the optimal parameters through supervised learning. Such an approach is expected to lead to superior deblurring results while at a significantly reduced computational complexity, which will cast the designed method practical for real-world applications.</p>
+
+<p>For more details, click at <a href="https://faculty.skoltech.ru/app/data/uploads/sites/19/2018/04/Student_Projects_2018.pdf">here</a>.</p>
+
+<h3 id="project-title-image-restoration-of-photon-limited-data-using-convolutional-neural-networks">Project Title: Image Restoration of Photon-Limited Data using Convolutional Neural Networks</h3>
+
+<h4 id="projectdescription-4">Project	Description:</h4>
+<p>Photon-limited imaging arises in a wide variety of applications, including night vision, biomedical imaging, space weather, astronomy, and spectral imaging. In such applications image acquisition is accomplished by detecting the number of photons “hitting” a sensor, over some time interval. For low intensity levels, one of the dominant noise sources responsible for the degradation of the quality of the captured images is the so-called quantum or shot noise. Quantum noise is due to fluctuations on the number of detected photons, an inherent limitation of the discrete nature of the detection process, and degrades such images both qualitatively and quantitatively. The resulting degradation can prove to be a major obstacle preventing further image analysis and information extraction. Thus, the development of methods and techniques that are able to deal with this type of degradation is of fundamental importance.</p>
+
+<p>Recently, several image denoising techniques based on convolutional neural networks have been proposed in the literature and they have been shown to lead to impressive results. However, such methods are specifically designed for image denoising under Gaussian noise and thus cannot be directly applied to photon-limited data. The goal of this project is to investigate whether it is possible either to modify existing CNN architectures that are designed for Gaussian image denoising or to design new deep models that will be able to eliminate quantum noise and lead to state-of-the-art results.</p>
+
+<p>For more details, click at <a href="https://faculty.skoltech.ru/app/data/uploads/sites/19/2018/04/Student_Projects_2018.pdf">here</a>.</p>
+
+<h3 id="project-title-machine-learning-in-seismic-data-processing">Project Title: Machine Learning in Seismic Data Processing</h3>
+
+<h4 id="projectdescription-5">Project	Description:</h4>
+<p>Seismic is a geophysical method for studying the Earth structure using seismic (elastic) waves. These waves propagate through the subsurface and can be used to recover its structure. Active seismic exploration relies on artificial seismic sources for sounding the upper kilometers of the Earth crust. This method is widely used for exploration and imaging hydrocarbon fields. Passive seismic monitoring uses permanent or temporal seismic arrays recording natural or induced seismic activity (earthquakes of different strength). Such monitoring is used for improving seismic hazard prediction, mining safety, studying slope and building stability etc. Arrays of seismic sensors (like microphones) are recording large amounts of seismic data. Major obstacle to efficient seismic data analysis is that many processing procedures require participation of an expert-geophysicist. Thus, the development of methods and techniques for reliable automatic processing of seismic data is of fundamental importance.</p>
+
+<p>Data recorded by seismic arrays contains multiple useful signals of various form contaminated with noise of different properties. There are several processing procedures which we wanted to address. First problem is signal enhancement (denoising) of seismic array data given that signals from one event at different sensors should be similar. Given catalog of several signals from different seismic events we arrive to another problem of classification of these events according to similarity of their waveforms.</p>
+
+<p>Recently, neural networks have been proposed in the literature for processing seismic data. However, these methods need improvement so that data can be robustly analyzed automatically. The goal of this project is to investigate whether it is possible either to modify existing CNN architectures or to design new deep models that will be useful for signal enhancement in seismic array data. Another possible project is aiming at using state-of-the-art cluster analysis methods for classification of seismic events in the catalog.</p>
+
+<p>For more details, click at <a href="https://faculty.skoltech.ru/app/data/uploads/sites/19/2018/04/Student_Projects_2018.pdf">here</a>.</p>
+
+
+</div>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-4">
+			
+		  <p>&copy 2018 CIG Lab. Site made with <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+              <p>We are part of the <a href="https://crei.skoltech.ru/cdise">CDISE department</a> at <a href="https://www.skoltech.ru/en/">Skoltech</a>.</p>
+            
+
+		   <p>  </p><p>
+            		  
+            
+		</div>
+		<div class="col-sm-4">
+		  Funding:<br />
+		  <a href="https://www.skoltech.ru/en/">Skoltech</a>
+		</div>
+		<div class="col-sm-4">
+		  Contact:<br />
+                  Skolkovo Institute of Science and Technology,<br />
+		  Nobelya Ulitsa 4,<br />
+		  Moscow, Russia 121205 <br />
+            (<a href="https://goo.gl/rGTypG">Maps</a>, <a href="https://www.skoltech.ru/en/about/contacts/">Directions</a>)
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
